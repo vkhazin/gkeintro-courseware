@@ -4,9 +4,9 @@
 
 ## Overview
 
-Multi-session introduction to Google Kubernetes Engine delivered in bite chunks
-A walk through concepts, deployment methods and integration with GCP Services
-Engage in group discussions and experiment hands-on with GKE clusters 
+* Multi-session introduction to Google Kubernetes Engine delivered in bite chunks
+* A walk through concepts, deployment methods and integration with GCP Services
+* Engage in group discussions and experiment hands-on with GKE clusters 
 
 ## Audience
 
