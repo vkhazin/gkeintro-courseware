@@ -1,0 +1,19 @@
+{
+  "name": "gkeintro-courseware",
+  "version": "1.0.0",
+  "description": "[by Vlad Khazin](https://www.linkedin.com/in/vkhazin)",
+  "main": "index.js",
+  "scripts": {
+    "start": "gitbook serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vkhazin/gkeintro-courseware.git"
+  },
+  "author": "Vlad Khazin <vlad.khazin@icssolutions.ca>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vkhazin/gkeintro-courseware/issues"
+  },
+  "homepage": "https://github.com/vkhazin/gkeintro-courseware#readme"
+}
