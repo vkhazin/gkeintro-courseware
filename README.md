@@ -14,7 +14,7 @@
 * Software developers writing code that needs to run in containers
 * DevOps engineers that will be implementing deployment and operation automation
 
-## Course's Objectives
+## Objectives
 
 * Kubernetes architecture, workloads and deployment
 * Review the common design patterns of GKE
