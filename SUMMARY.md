@@ -20,3 +20,14 @@
 * [What to do with Kubernetes](./k8s-intro/what-to-do-k8s.md)
 * [Summary](./k8s-intro/summary.md)
 
+## Docker vs. Kubernetes
+
+* [Container Motivation](./docker-vs-k8s/container-motivation.md)
+* [Container vs. VM](./docker-vs-k8s/container-vs-vm.md)
+* [Author a Dockerfile](./docker-vs-k8s/author-dockerfile.md)
+* [Lab: End-Point in a Container](./docker-vs-k8s/lab-endpoint-container.md)
+* [From Docker to Kubernetes](./docker-vs-k8s/from-docker-to-k8s.md)
+
+## Kubernetes Cluster
+
+* [Cluster Architecture](./cluster-architecture.md)
