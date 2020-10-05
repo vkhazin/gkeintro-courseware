@@ -18,3 +18,5 @@
 * [History](./k8s-intro/history.md)
 * [What is Kubernetes](./k8s-intro/whats-k8s.md)
 * [What to do with Kubernetes](./k8s-intro/what-to-do-k8s.md)
+* [Summary](./k8s-intro/summary.md)
+
