@@ -1,4 +1,4 @@
-# Summary
+# Chapter Summary
 
 * Where does Kubernetes come from?
 * What is the definition of Kubernetes?

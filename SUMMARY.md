@@ -27,7 +27,15 @@
 * [Author a Dockerfile](./docker-vs-k8s/author-dockerfile.md)
 * [Lab: End-Point in a Container](./docker-vs-k8s/lab-endpoint-container.md)
 * [From Docker to Kubernetes](./docker-vs-k8s/from-docker-to-k8s.md)
+* [Summary](./docker-vs-k8s/summary.md)
+
 
 ## Kubernetes Cluster
 
-* [Cluster Architecture](./cluster-architecture.md)
+* [Architecture](./k8s-cluster/architecture.md)
+* [Features](./k8s-cluster/features.md)
+* [Workloads](./k8s-cluster/workloads-i.md)
+* [Workloads Cont'd](./k8s-cluster/workloads-ii.md)
+* [Pod](./k8s-cluster/pod.md)
+* [Lab: Deployment](./k8s-cluster/lab-k8s-deployment.md)
+* [Summary](./docker-cluster/summary.md)
