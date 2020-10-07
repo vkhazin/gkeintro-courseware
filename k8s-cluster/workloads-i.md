@@ -7,4 +7,4 @@
 * Services and EndPoints provide a way Pods to talk with each other
 * Ingress is the glue between the outside world and your Services e.g. in a form of Http Load Balancer
 
-[![](../media/k8s-workloads-i.jpg)](https://medium.com/@vishaldwivedi13/kubernetes-understanding-ecosystem-in-less-than-10-minutes-4142df33b4aa)
+[![](../media/k8s-workloads-i.png)](https://medium.com/@vishaldwivedi13/kubernetes-understanding-ecosystem-in-less-than-10-minutes-4142df33b4aa)

@@ -39,3 +39,9 @@
 * [Pod](./k8s-cluster/pod.md)
 * [Lab: Deployment](./k8s-cluster/lab-k8s-deployment.md)
 * [Summary](./docker-cluster/summary.md)
+
+## Kubernetes vs. GKE
+
+* [What is GKE](./k8s-vs-gke/whats-gke.md)
+* [GCP Services](./k8s-vs-gke/gcp-services.md)
+* [Summary](./k8s-vs-gke/summary.md)

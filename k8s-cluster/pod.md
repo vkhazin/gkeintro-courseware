@@ -6,3 +6,5 @@
 * A loose equivalent of processes running on the same physical or virtual machine
 * Containers within a Pod share an IP address and port space
 * Pods are considered to be relatively ephemeral entities: scheduled, replaced, terminated, and deleted
+
+[![](../media/pod.png)](https://medium.com/developerworld/pod-vs-node-in-kubernetes-26c858988f94)
