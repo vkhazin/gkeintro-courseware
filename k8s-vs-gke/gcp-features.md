@@ -6,4 +6,4 @@
 * Rapid elasticity
 * Measured service
 
-  [![](../media/gcp-services.png)](https://www.edureka.co/blog/what-is-google-cloud-platform/)
+  [![](../media/gcp-features.png)](https://www.edureka.co/blog/what-is-google-cloud-platform/)

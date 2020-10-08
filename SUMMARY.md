@@ -43,5 +43,8 @@
 ## Kubernetes vs. GKE
 
 * [What is GKE](./k8s-vs-gke/whats-gke.md)
-* [GCP Services](./k8s-vs-gke/gcp-services.md)
+* [GCP Features](./k8s-vs-gke/gcp-features.md)
+* [GKE Features](./k8s-vs-gke/gke-features.md)
+* [Logging and Monitoring](./k8s-vs-gke/logging-monitoring.md)
+* [Lab: Logging and Monitoring](./k8s-vs-gke/lab-logging-monitoring.md)
 * [Summary](./k8s-vs-gke/summary.md)
