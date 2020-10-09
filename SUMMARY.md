@@ -44,7 +44,15 @@
 
 * [What is GKE](./k8s-vs-gke/whats-gke.md)
 * [GCP Features](./k8s-vs-gke/gcp-features.md)
+* [GCP Benefits](./k8s-vs-gke/gcp-benefits.md)
 * [GKE Features](./k8s-vs-gke/gke-features.md)
 * [Logging and Monitoring](./k8s-vs-gke/logging-monitoring.md)
 * [Lab: Logging and Monitoring](./k8s-vs-gke/lab-logging-monitoring.md)
 * [Summary](./k8s-vs-gke/summary.md)
+
+## Best Practices
+
+* [Micro-Services](./best-practices/microservices.md)
+* [12 Factor App](./best-practices/12-factor-app.md)
+* [Kubernetes Best Practices](./best-practices/k8s-best-practices.md)
+* [GKE Best Practices](./best-practices/gke-best-practices.md)
