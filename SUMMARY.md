@@ -56,3 +56,14 @@
 * [12 Factor App](./best-practices/12-factor-app.md)
 * [Kubernetes Best Practices](./best-practices/k8s-best-practices.md)
 * [GKE Best Practices](./best-practices/gke-best-practices.md)
+* [Summary](./best-practices/summary.md)
+
+### Stateful Workloads
+
+* [Volumes](./stateful-workloads/volumes.md)
+* [Persistent Volumes](./stateful-workloads/persistent-volumes.md)
+* [Persistent Volume Claims](./stateful-workloads/persistent-volume-claims.md)
+* [Access Modes](./stateful-workloads/access-modes.md)
+* [Summary](./stateful-workloads/summary.md)
+
+### Security
