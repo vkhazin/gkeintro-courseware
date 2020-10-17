@@ -63,6 +63,9 @@
 * [Volumes](./stateful-workloads/volumes.md)
 * [Persistent Volumes](./stateful-workloads/persistent-volumes.md)
 * [Persistent Volume Claims](./stateful-workloads/persistent-volume-claims.md)
+* [Storage Definitions](./stateful-workloads/storage-definitions.md)
+* [Dynamic Provisioning](./stateful-workloads/dynamic-provisioning.md)
+* [Regional Persistent Disk](./stateful-workloads/regional-persistent-disk.md)
 * [Access Modes](./stateful-workloads/access-modes.md)
 * [Summary](./stateful-workloads/summary.md)
 

@@ -6,6 +6,6 @@
 * `ReadWriteMany` mounts Volumes as read-write to many nodes
 * For most applications, Persistent Disks are mounted as ReadWriteOnce
 * GCP Persistent disks do not support `ReadWriteMany`
-* Other volume times e.g. NFS can support the `ReadWriteMany` accessMode, watch out for concurrency!
+* Other volume types e.g. NFS can support the `ReadWriteMany` accessMode, watch out for concurrency!
 
 [![](../media/access-modes.png)](https://www.openshift.com/blog/openshift-enterprise-3-evolving-paas-future)
