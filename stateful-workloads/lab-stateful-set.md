@@ -13,58 +13,56 @@ gcloud container clusters create $my_cluster \
 1. Once the cluster is ready, select `Connect` link to initiate Cloud Shell to work with `kubectl`
 1. Switch to a full screen mode and open an editor
 1. Create a new file `stateful-set.yml` with the following content:
-```
-apiVersion: v1
-kind: Service
-metadata:
-  name: nginx
-  labels:
-    app: nginx
-spec:
-  ports:
-  - protocol: "TCP"
-    port: 80
-    targetPort: 80
-  selector:
-    app: nginx
-  type: "LoadBalancer"
----
+  ```
+  apiVersion: v1
+  kind: Service
+  metadata:
+    name: nginx
+    labels:
+      app: nginx
+  spec:
+    ports:
+    - protocol: "TCP"
+      port: 80
+      targetPort: 80
+    selector:
+      app: nginx
+    type: "LoadBalancer"
 
-apiVersion: apps/v1
-kind: StatefulSet
-metadata:
-  name: web
-spec:
-  selector:
-    matchLabels:
-      app: nginx # Label selector that determines which Pods belong to the StatefulSet
-                 # Must match spec: template: metadata: labels
-  serviceName: "nginx"
-  replicas: 3
-  template:
-    metadata:
-      labels:
-        app: nginx # Pod template's label selector
-    spec:
-      terminationGracePeriodSeconds: 10
-      containers:
-      - name: nginx
-        image: k8s.gcr.io/nginx-slim:0.8
-        ports:
-        - containerPort: 80
-          name: web
-        volumeMounts:
-        - name: www
-          mountPath: /usr/share/nginx/html
-  volumeClaimTemplates:
-  - metadata:
-      name: www
-    spec:
-      accessModes: [ "ReadWriteOnce" ]
-      resources:
-        requests:
-          storage: 1Gi
-```
+  apiVersion: apps/v1
+  kind: StatefulSet
+  metadata:
+    name: web
+  spec:
+    selector:
+      matchLabels:
+        app: nginx
+    serviceName: "nginx"
+    replicas: 3
+    template:
+      metadata:
+        labels:
+          app: nginx # Pod template's label selector
+      spec:
+        terminationGracePeriodSeconds: 10
+        containers:
+        - name: nginx
+          image: k8s.gcr.io/nginx-slim:0.8
+          ports:
+          - containerPort: 80
+            name: web
+          volumeMounts:
+          - name: www
+            mountPath: /usr/share/nginx/html
+    volumeClaimTemplates:
+    - metadata:
+        name: www
+      spec:
+        accessModes: [ "ReadWriteOnce" ]
+        resources:
+          requests:
+            storage: 1Gi
+  ```
 1. Apply the configuration: `kubectl apply --filename ./stateful-set.yml`
 1. Check how many pods have been created: `kubectl get pods`
 1. Depending on how fast the deployment processed you may see one, two, or all three pods running or some of them being `ContainerCreating`
