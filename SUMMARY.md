@@ -67,6 +67,7 @@
 * [Dynamic Provisioning](./stateful-workloads/dynamic-provisioning.md)
 * [Regional Persistent Disk](./stateful-workloads/regional-persistent-disk.md)
 * [Access Modes](./stateful-workloads/access-modes.md)
+* [StatefulSet](./stateful-workloads/stateful-set.md)
 * [Summary](./stateful-workloads/summary.md)
 
 ### Security
