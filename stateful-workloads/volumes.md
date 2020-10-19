@@ -6,7 +6,7 @@
 * Ephemeral volume types:  ConfigMap, emptyDir, Secrets, and downwardAPI or Pod Metadata
 * Persistent storage is a block storage, or networked file systems
 * Persistent storage must exist before Pod creation and storage will outlive Pod itself
-* Persistent storage types: iSCSI volumes, NFS, Windows Share, gcePersistentDisk, and GPC Cloud Filestore
-* Container in a Pod will start when all the volumes are ready to be mounted, type of persistent storage matters
+* Persistent storage types: iSCSI volumes, NFS, Windows Share, gcePersistentDisk, and GCP Cloud Storage
+* Container in a Pod will start when all the volumes are ready to be mounted
 
 [![](../media/k8s-volumes.png)](https://itnext.io/using-overlay-mounts-with-kubernetes-960375c05959)

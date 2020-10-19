@@ -16,7 +16,8 @@
 1. -p 3001:3001 maps host port 3001 to container port 3001
 1. -d starts detached to be able to continue using the terminal
 1. --rm deletes the container when it is stopped
-1. And now you are able to access the endpoint: curl http://localhost:3001/?name=John
+1. And now you are able to access the endpoint: 
+  `curl http://localhost:3001/?name=John`
 1. This is how you create a node.js end-point running in a container
 1. To delete the container: `sudo docker rm node-end-point -f`
 1. To delete the image: `sudo docker rmi node/end-point`

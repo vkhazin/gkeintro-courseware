@@ -1,6 +1,6 @@
 # GKE Features
 
-* Fully managed Kubernetes with no need for us provision the underlying resources
+* Fully managed Kubernetes with no need for us to provision the underlying resources
 * A container-optimized operating system maintained by Google
 * Pod and cluster autoscaling and healing
 * Identity and access management

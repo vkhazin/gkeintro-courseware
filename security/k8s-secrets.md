@@ -1,6 +1,6 @@
 # Kubernetes Secrets
 
-* Secrets let store and manage sensitive information, such as passwords, oAuth tokens and etc
+* Secrets let store and manage sensitive information, such as passwords, oAuth tokens and etc.
 * Secret is an object that contains a small amount of sensitive data
 * Can be used with a Pod in three ways:
   1. As container environment variables

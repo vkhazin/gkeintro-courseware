@@ -2,7 +2,7 @@
 
 * Separate storage consumption from storage provisioning
 * Cluster administrators make persistent volumes available
-* App developers make use of those volumes in through claims
+* App developers make use of those volumes in Pods/Stateful Sets through claims
 * GKE default StorageClass is dynamically provisioned using gcePersistentDisk
 * Creating a Compute Engine Persistent Disk is a GCP task not a Kubernetes task, e.g.:
 ```

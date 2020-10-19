@@ -10,5 +10,7 @@ CMD ["/hello"]
 ```
 
 * Where `scratch` is `name:tag` of the base image, in this case, the most basic image `scratch:latest`
-* COPY command copies the executable file `hello` to the root of a file system
-* CMD is the command executed when a container is running
+* `COPY` command copies the executable file `hello` to the root of a file system
+* `CMD` is the command executed when a container is running
+
+[![](../media/dockerfile.webp)](https://geekflare.com/dockerfile-tutorial/)

@@ -1,7 +1,7 @@
 # Images & Repositories
 
 * Run container based on images without known vulnerabilities
-* Use most basic image that suits your requirements
+* Use the most basic image to suit dependencies
 * Remove processes and components from the images you don't require
 * Implement continuous security vulnerability scanning
 * Roll-out security updates using new images, avoid `apt-update` style patching

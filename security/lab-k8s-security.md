@@ -37,9 +37,9 @@
 1. Deploy the Pod using the `kubectl apply ...` command
 1. Get detailed information about the deployed pod: `kubectl describe...`
 1. Verify the pod has access to the secret mapped as a volume `/etc/secret-volume`
-1. Attached an interactive shell to the running pod `kubectl exec -i -t pod-with-secret -- /bin/bash`
-1. Display content of the mapped volume: `ls /etc/secret-volume`
-1. Print clear text secret:
+1. Attache an interactive shell to the running pod `kubectl exec -i -t pod-with-secret -- /bin/bash`
+1. Display the content of the mapped volume: `ls /etc/secret-volume`
+1. Print clear text secrets:
 ```
 echo "Username: $( cat /etc/secret-volume/username )"
 echo "Password: $( cat /etc/secret-volume/password )"
