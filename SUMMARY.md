@@ -37,6 +37,7 @@
 * [Workloads](./k8s-cluster/workloads-i.md)
 * [Workloads Cont'd](./k8s-cluster/workloads-ii.md)
 * [Pod](./k8s-cluster/pod.md)
+* [Service](./k8s-cluster/service.md)
 * [Lab: Deployment](./k8s-cluster/lab-k8s-deployment.md)
 * [Summary](./docker-cluster/summary.md)
 
@@ -49,14 +50,6 @@
 * [Logging and Monitoring](./k8s-vs-gke/logging-monitoring.md)
 * [Lab: Logging and Monitoring](./k8s-vs-gke/lab-logging-monitoring.md)
 * [Summary](./k8s-vs-gke/summary.md)
-
-## Best Practices
-
-* [Micro-Services](./best-practices/microservices.md)
-* [12 Factor App](./best-practices/12-factor-app.md)
-* [Kubernetes Best Practices](./best-practices/k8s-best-practices.md)
-* [GKE Best Practices](./best-practices/gke-best-practices.md)
-* [Summary](./best-practices/summary.md)
 
 ### Stateful Workloads
 
@@ -72,3 +65,26 @@
 * [Summary](./stateful-workloads/summary.md)
 
 ### Security
+
+* [Images & Repositories](./security/images-repos.md)
+* [Know Thy Deployment](./security/know-your-deployment.md)
+* [Cluster Security](./security/cluster-security.md)
+* [Zero Trust](./security/zero-trust.md)
+* [Kubernetes Secrets](./security/k8s-secrets.md)
+* [Lab: Kubernetes Security](./security/lab-k8s-security.md)
+* [Summary](./security/summary.md)
+
+## Best Practices
+
+* [Micro-Services](./best-practices/microservices.md)
+* [12 Factor App](./best-practices/12-factor-app.md)
+* [Kubernetes Best Practices](./best-practices/k8s-best-practices.md)
+* [GKE Best Practices](./best-practices/gke-best-practices.md)
+* [Stateful Workloads](./best-practices/stateful-workloads.md)
+* [GCP Services](./best-practices/gcp-services.md)
+* [Summary](./best-practices/summary.md)
+
+## Course Summary
+
+* [Cleanup](./course-summary/cleanup.md)
+* [Thank you](./course-summary/thank-you.md)
