@@ -8,7 +8,7 @@
 7. For location type select `zonal` and select the desired location
 8. Select the default version of the cluster from the drop-down list
 9. Select `3` for `Number of nodes`
-10. Select `n1-standard-1` for the node size
+10. Select a size with 2 vCPU and 4GB memory for the node size
 11. Select `Create` link and wait for the cluster to provision, it may take a few minutes
 12. When the cluster is provisioned and ready, select `connect` link next to the cluster name
 13. Select `Run in Cloud Shell` 
