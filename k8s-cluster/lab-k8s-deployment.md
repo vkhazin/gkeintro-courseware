@@ -2,8 +2,7 @@
 
 1. Log in to Google Cloud Console
 2. As a reminder GCP API's are eventually consistent, we may need to wait here and there
-3. Create a new project `gcp-k8s` where to launch new GKE Cluster
-4. Select the newly created project from the drop-down list and navigate to `Kubernetes Engine` and wait for the API being enabled
+4. Navigate to `Kubernetes Engine` and wait for the API being enabled
 5. Select `Create cluster` once the API has been enabled
 6. Choose the `Standard cluster` and provide a name
 7. For location type select `zonal` and select the desired location
