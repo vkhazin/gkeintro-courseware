@@ -14,21 +14,6 @@ gcloud container clusters create $my_cluster \
 1. Switch to a full screen mode and open an editor as well
 1. Create a new file `stateful-set.yml` with the following content:
   ```
-  apiVersion: v1
-  kind: Service
-  metadata:
-    name: nginx
-    labels:
-      app: nginx
-  spec:
-    ports:
-    - protocol: "TCP"
-      port: 80
-      targetPort: 80
-    selector:
-      app: nginx
-    type: "LoadBalancer"
-
   apiVersion: apps/v1
   kind: StatefulSet
   metadata:
@@ -71,8 +56,12 @@ gcloud container clusters create $my_cluster \
 1. The `Storage` link will display persistent volume claims
 1. We can also see the persistent volume claims using a command line: `kubectl get pvc`
 1. Using the web console navigate to `Compute Engine` -> `Disks` to see the storage dynamically created
-1. From the `Kubernetes Engine` -> `Services & Ingress` copy the combination of end-point and port for the load balancer, when the provisioning has completed
-1. Using a terminal run the command: `curl http://loadbalancer-external-ip/`
+1. Now we will port forward requests from Cloud Shell to a particular pod
+1. Using the same terminal where you have executed `kubectl` commands run:
+  ```
+  kubectl port-forward web-0 8080:80
+  ```
+1. Open another tab in the Cloud Shell to send a request: `curl localhost:8080`
 1. We should get `403 Forbidden` as we don't have `/usr/share/nginx/html/index.html` file yet
 1. Using cloud shell let's create an `index.html` file in each pod:
 ```
@@ -80,5 +69,10 @@ for i in 0 1 2; \
   do kubectl exec "web-$i" -- sh -c 'echo "Hello NginX from $(hostname)!" > /usr/share/nginx/html/index.html'; \
 done
 ```
-1. Repeat the terminal command: `curl http://loadbalancer-external-ip/` a couple of times to notice different hostname
-1. You can also open a browser to point to the load-balancer IP, but you may not be getting different hostnames when refreshing
+1. Repeat the `curl` command a few times to see responses with different hostnames
+1. Use `Ctrl-C` to stop the port forwarding in the first tab
+1. Delete the first pod: `kubectl delete pod web-0`
+1. Check with `kubectl get pods -w` to verify the pod has been re-created
+1. Re-issue the port-forwarding command from before and in, a separate shell tab, the `curl` command
+1. You should get the same hostname in the response as before even though the Pod has been deleted and re-created.
+1. As the Pod's storage was preserved between Pod restarts
