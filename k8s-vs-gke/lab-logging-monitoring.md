@@ -1,6 +1,10 @@
 # Lab: GKE Logging & Monitoring
 
 1. Navigate to [https://console.cloud.google.com/kubernetes/](https://console.cloud.google.com/kubernetes/workload)
+1. Resize the cluster if you have scaled it to 0-nodes:
+  ```
+  gcloud container clusters resize ${your-cluster-name} --num-nodes=3 --zone ${your-zone}
+  ```
 1. Select the nodejs-endpoint workload we have created in the previous lab
 1. You may want to hit the end-point using browser or curl command to generate some recent load and loads from the `Services & Ingress` navigation link
 1. Notice the following:
