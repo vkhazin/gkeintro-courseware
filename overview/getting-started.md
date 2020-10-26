@@ -5,5 +5,5 @@
 * Select [repository url](https://github.com/vkhazin/gkeintro-courseware) and then `fork` link to create a copy of the repo for yourself 
 * Alternatively, you are welcome to use any other method to comment and to take notes
 * You will be using your own laptop and a browser for all activities
-* A GCP account with billing enabled is requried
+* A GCP account with billing enabled is required
 * A personal GCP account is highly recommended for the full control
